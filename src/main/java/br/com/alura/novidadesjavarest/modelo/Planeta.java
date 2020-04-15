@@ -18,7 +18,8 @@ public class Planeta implements Serializable {
 	private Integer periodoOrbital;
 	private Integer diametro;
 
-	public Planeta() { }
+	public Planeta() {
+	}
 
 	public Planeta(String nome, Integer rotacaoPorPeriodo, Integer periodoOrbital, Integer diametro) {
 		this.nome = nome;

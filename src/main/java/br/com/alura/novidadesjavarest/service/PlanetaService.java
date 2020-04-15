@@ -13,7 +13,7 @@ import br.com.alura.novidadesjavarest.modelo.Planeta;
 public class PlanetaService {
 
 	@Autowired
-	private LeitorDeArquivo leitorArquivo; 
+	private LeitorDeArquivo leitorArquivo;
 
 	public List<Planeta> listar() {
 		return Collections.unmodifiableList(leitorArquivo.lerArquivo());

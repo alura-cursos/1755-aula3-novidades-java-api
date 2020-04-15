@@ -13,11 +13,11 @@ public class TranformadorImpl implements Transformador {
 	@Override
 	public List<Planeta> transformar(Object object) {
 		List<Planeta> list = new ArrayList<>();
-		if (object instanceof ArrayList<?>) {
-			List<?> obectList = (List<?>) object;
+		if (object instanceof ArrayList<?> listOfObject) {
+			List<?> obectList = listOfObject;
 			for (Object a : obectList) {
-				if(a instanceof Planeta) {
-					list.add((Planeta) a);
+				if (a instanceof Planeta planeta) {
+					list.add(planeta);
 				}
 			}
 		}
